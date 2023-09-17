@@ -43,7 +43,7 @@ class TectonicPlateGenerator:
             y_offset = random.randint(-60, 60)
             plate_geometry = geojson.utils.generate_random(
                 featureType="Polygon",
-                numberVertices=random.randint(4, 6),
+                numberVertices=random.randint(5, 7),
                 boundingBox=[-75, -25, 75, 25],
             )
             plate_geometry["coordinates"][0] = [
